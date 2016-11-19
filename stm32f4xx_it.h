@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
-  * File Name          : mxconstants.h
-  * Description        : This file contains the common defines of the application
+  * @file    stm32f4xx_it.h
+  * @brief   This file contains the headers of the interrupt handlers.
   ******************************************************************************
   *
   * COPYRIGHT(c) 2016 STMicroelectronics
@@ -30,50 +30,36 @@
   *
   ******************************************************************************
   */
+
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MXCONSTANT_H
-#define __MXCONSTANT_H
-  /* Includes ------------------------------------------------------------------*/
+#ifndef __STM32F4xx_IT_H
+#define __STM32F4xx_IT_H
 
-/* USER CODE BEGIN Includes */
+#ifdef __cplusplus
+ extern "C" {
+#endif 
 
-/* USER CODE END Includes */
+/* Includes ------------------------------------------------------------------*/
+/* Exported types ------------------------------------------------------------*/
+/* Exported constants --------------------------------------------------------*/
+/* Exported macro ------------------------------------------------------------*/
+/* Exported functions ------------------------------------------------------- */
 
-/* Private define ------------------------------------------------------------*/
+void NMI_Handler(void);
+void HardFault_Handler(void);
+void MemManage_Handler(void);
+void BusFault_Handler(void);
+void UsageFault_Handler(void);
+void DebugMon_Handler(void);
+void SysTick_Handler(void);
+void USART1_IRQHandler(void);
+void USART3_IRQHandler(void);
+void TIM6_DAC_IRQHandler(void);
 
-#define CCD_CLK_Pin GPIO_PIN_13
-#define CCD_CLK_GPIO_Port GPIOC
-#define CCD_SI_Pin GPIO_PIN_0
-#define CCD_SI_GPIO_Port GPIOC
-#define CCD_AO_Pin GPIO_PIN_1
-#define CCD_AO_GPIO_Port GPIOC
-#define KEY_Pin GPIO_PIN_2
-#define KEY_GPIO_Port GPIOC
-#define LED_Pin GPIO_PIN_3
-#define LED_GPIO_Port GPIOA
-#define MPU_SDA_Pin GPIO_PIN_12
-#define MPU_SDA_GPIO_Port GPIOB
-#define MPU_SCL_Pin GPIO_PIN_13
-#define MPU_SCL_GPIO_Port GPIOB
-#define OLED_DC_Pin GPIO_PIN_5
-#define OLED_DC_GPIO_Port GPIOD
-#define OLED_RST_Pin GPIO_PIN_7
-#define OLED_RST_GPIO_Port GPIOD
-#define OLED_SDA_Pin GPIO_PIN_4
-#define OLED_SDA_GPIO_Port GPIOB
-#define OLED_SCL_Pin GPIO_PIN_6
-#define OLED_SCL_GPIO_Port GPIOB
-/* USER CODE BEGIN Private defines */
+#ifdef __cplusplus
+}
+#endif
 
-/* USER CODE END Private defines */
+#endif /* __STM32F4xx_IT_H */
 
-/**
-  * @}
-  */ 
-
-/**
-  * @}
-*/ 
-
-#endif /* __MXCONSTANT_H */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

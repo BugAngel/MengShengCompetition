@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
-  * File Name          : mxconstants.h
-  * Description        : This file contains the common defines of the application
+  * File Name          : freertos.c
+  * Description        : Code for freertos applications
   ******************************************************************************
   *
   * COPYRIGHT(c) 2016 STMicroelectronics
@@ -30,50 +30,50 @@
   *
   ******************************************************************************
   */
-/* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MXCONSTANT_H
-#define __MXCONSTANT_H
-  /* Includes ------------------------------------------------------------------*/
+
+/* Includes ------------------------------------------------------------------*/
+#include "FreeRTOS.h"
+#include "task.h"
 
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
-/* Private define ------------------------------------------------------------*/
+/* Variables -----------------------------------------------------------------*/
 
-#define CCD_CLK_Pin GPIO_PIN_13
-#define CCD_CLK_GPIO_Port GPIOC
-#define CCD_SI_Pin GPIO_PIN_0
-#define CCD_SI_GPIO_Port GPIOC
-#define CCD_AO_Pin GPIO_PIN_1
-#define CCD_AO_GPIO_Port GPIOC
-#define KEY_Pin GPIO_PIN_2
-#define KEY_GPIO_Port GPIOC
-#define LED_Pin GPIO_PIN_3
-#define LED_GPIO_Port GPIOA
-#define MPU_SDA_Pin GPIO_PIN_12
-#define MPU_SDA_GPIO_Port GPIOB
-#define MPU_SCL_Pin GPIO_PIN_13
-#define MPU_SCL_GPIO_Port GPIOB
-#define OLED_DC_Pin GPIO_PIN_5
-#define OLED_DC_GPIO_Port GPIOD
-#define OLED_RST_Pin GPIO_PIN_7
-#define OLED_RST_GPIO_Port GPIOD
-#define OLED_SDA_Pin GPIO_PIN_4
-#define OLED_SDA_GPIO_Port GPIOB
-#define OLED_SCL_Pin GPIO_PIN_6
-#define OLED_SCL_GPIO_Port GPIOB
-/* USER CODE BEGIN Private defines */
+/* USER CODE BEGIN Variables */
+extern volatile  unsigned int OSIdleCtr;    /* 空闲计数器  */
+/* USER CODE END Variables */
 
-/* USER CODE END Private defines */
+/* Function prototypes -------------------------------------------------------*/
 
-/**
-  * @}
-  */ 
+/* USER CODE BEGIN FunctionPrototypes */
 
-/**
-  * @}
-*/ 
+/* USER CODE END FunctionPrototypes */
 
-#endif /* __MXCONSTANT_H */
+/* Hook prototypes */
+void vApplicationIdleHook(void);
+
+/* USER CODE BEGIN 2 */
+void vApplicationIdleHook( void )
+{
+    /* vApplicationIdleHook() will only be called if configUSE_IDLE_HOOK is set
+    to 1 in FreeRTOSConfig.h. It will be called on each iteration of the idle
+    task. It is essential that code added to this hook function never attempts
+    to block in any way (for example, call xQueueReceive() with a block time
+    specified, or call vTaskDelay()). If the application makes use of the
+    vTaskDelete() API function (as this demo application does) then it is also
+    important that vApplicationIdleHook() is permitted to return to its calling
+    function, because it is the responsibility of the idle task to clean up
+    memory allocated by the kernel to any task that has since been deleted. */
+    taskENTER_CRITICAL(); //关中断
+    OSIdleCtr++;//空闲计数器加一
+    taskEXIT_CRITICAL();                     //开中断
+}
+/* USER CODE END 2 */
+
+/* USER CODE BEGIN Application */
+
+/* USER CODE END Application */
+
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
