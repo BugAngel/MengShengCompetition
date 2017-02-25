@@ -111,30 +111,30 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.radioButton13 = new System.Windows.Forms.RadioButton();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -148,22 +148,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
+            this.statusChart1 = new UI.StatusChart();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.button16 = new System.Windows.Forms.Button();
@@ -230,6 +215,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "串口";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -1230,30 +1216,30 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.radioButton14);
+            this.groupBox5.Controls.Add(this.radioButton13);
+            this.groupBox5.Controls.Add(this.radioButton12);
+            this.groupBox5.Controls.Add(this.radioButton11);
+            this.groupBox5.Controls.Add(this.radioButton10);
+            this.groupBox5.Controls.Add(this.radioButton9);
+            this.groupBox5.Controls.Add(this.radioButton8);
+            this.groupBox5.Controls.Add(this.radioButton7);
+            this.groupBox5.Controls.Add(this.radioButton6);
+            this.groupBox5.Controls.Add(this.radioButton5);
+            this.groupBox5.Controls.Add(this.radioButton4);
+            this.groupBox5.Controls.Add(this.radioButton3);
             this.groupBox5.Controls.Add(this.label42);
             this.groupBox5.Controls.Add(this.label41);
             this.groupBox5.Controls.Add(this.label40);
             this.groupBox5.Controls.Add(this.label39);
             this.groupBox5.Controls.Add(this.label38);
             this.groupBox5.Controls.Add(this.label37);
-            this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.label35);
-            this.groupBox5.Controls.Add(this.label34);
-            this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.label32);
-            this.groupBox5.Controls.Add(this.label31);
             this.groupBox5.Controls.Add(this.label30);
             this.groupBox5.Controls.Add(this.label29);
             this.groupBox5.Controls.Add(this.label28);
             this.groupBox5.Controls.Add(this.label27);
             this.groupBox5.Controls.Add(this.label26);
             this.groupBox5.Controls.Add(this.label25);
-            this.groupBox5.Controls.Add(this.label24);
-            this.groupBox5.Controls.Add(this.label23);
-            this.groupBox5.Controls.Add(this.label22);
-            this.groupBox5.Controls.Add(this.label21);
-            this.groupBox5.Controls.Add(this.label20);
-            this.groupBox5.Controls.Add(this.label19);
             this.groupBox5.Location = new System.Drawing.Point(309, 357);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(317, 213);
@@ -1261,11 +1247,167 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "数据接收";
             // 
+            // radioButton14
+            // 
+            this.radioButton14.AutoSize = true;
+            this.radioButton14.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton14.Location = new System.Drawing.Point(159, 178);
+            this.radioButton14.Name = "radioButton14";
+            this.radioButton14.Size = new System.Drawing.Size(82, 20);
+            this.radioButton14.TabIndex = 35;
+            this.radioButton14.TabStop = true;
+            this.radioButton14.Text = "Number6";
+            this.radioButton14.UseVisualStyleBackColor = true;
+            this.radioButton14.CheckedChanged += new System.EventHandler(this.radioButton14_CheckedChanged);
+            // 
+            // radioButton13
+            // 
+            this.radioButton13.AutoSize = true;
+            this.radioButton13.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton13.Location = new System.Drawing.Point(159, 147);
+            this.radioButton13.Name = "radioButton13";
+            this.radioButton13.Size = new System.Drawing.Size(82, 20);
+            this.radioButton13.TabIndex = 34;
+            this.radioButton13.TabStop = true;
+            this.radioButton13.Text = "Number5";
+            this.radioButton13.UseVisualStyleBackColor = true;
+            this.radioButton13.CheckedChanged += new System.EventHandler(this.radioButton13_CheckedChanged);
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton12.Location = new System.Drawing.Point(159, 120);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(82, 20);
+            this.radioButton12.TabIndex = 33;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.Text = "Number4";
+            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButton12.CheckedChanged += new System.EventHandler(this.radioButton12_CheckedChanged);
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton11.Location = new System.Drawing.Point(159, 84);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(82, 20);
+            this.radioButton11.TabIndex = 32;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.Text = "Number3";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton10.Location = new System.Drawing.Point(159, 56);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(82, 20);
+            this.radioButton10.TabIndex = 31;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Number2";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton9.Location = new System.Drawing.Point(159, 28);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(82, 20);
+            this.radioButton9.TabIndex = 30;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Number1";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton8.Location = new System.Drawing.Point(11, 176);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(58, 20);
+            this.radioButton8.TabIndex = 29;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Roll";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton7.Location = new System.Drawing.Point(11, 147);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(50, 20);
+            this.radioButton7.TabIndex = 28;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Yaw";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton6.Location = new System.Drawing.Point(11, 120);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(66, 20);
+            this.radioButton6.TabIndex = 27;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Pitch";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton5.Location = new System.Drawing.Point(11, 86);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(90, 20);
+            this.radioButton5.TabIndex = 26;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "右轮速度";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton4.Location = new System.Drawing.Point(11, 56);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(90, 20);
+            this.radioButton4.TabIndex = 25;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "左轮速度";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("宋体", 12F);
+            this.radioButton3.Location = new System.Drawing.Point(11, 26);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(58, 20);
+            this.radioButton3.TabIndex = 24;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "中线";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
             // label42
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("宋体", 12F);
-            this.label42.Location = new System.Drawing.Point(247, 181);
+            this.label42.Location = new System.Drawing.Point(258, 180);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(16, 16);
             this.label42.TabIndex = 23;
@@ -1275,7 +1417,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("宋体", 12F);
-            this.label41.Location = new System.Drawing.Point(247, 147);
+            this.label41.Location = new System.Drawing.Point(258, 151);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(16, 16);
             this.label41.TabIndex = 22;
@@ -1285,7 +1427,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("宋体", 12F);
-            this.label40.Location = new System.Drawing.Point(247, 115);
+            this.label40.Location = new System.Drawing.Point(258, 122);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(16, 16);
             this.label40.TabIndex = 21;
@@ -1295,7 +1437,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("宋体", 12F);
-            this.label39.Location = new System.Drawing.Point(247, 86);
+            this.label39.Location = new System.Drawing.Point(258, 86);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(16, 16);
             this.label39.TabIndex = 20;
@@ -1305,7 +1447,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("宋体", 12F);
-            this.label38.Location = new System.Drawing.Point(247, 55);
+            this.label38.Location = new System.Drawing.Point(258, 55);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(16, 16);
             this.label38.TabIndex = 19;
@@ -1315,77 +1457,17 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("宋体", 12F);
-            this.label37.Location = new System.Drawing.Point(247, 28);
+            this.label37.Location = new System.Drawing.Point(258, 28);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(16, 16);
             this.label37.TabIndex = 18;
             this.label37.Text = "0";
             // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("宋体", 12F);
-            this.label36.Location = new System.Drawing.Point(156, 181);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(64, 16);
-            this.label36.TabIndex = 17;
-            this.label36.Text = "Number6";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("宋体", 12F);
-            this.label35.Location = new System.Drawing.Point(156, 147);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(64, 16);
-            this.label35.TabIndex = 16;
-            this.label35.Text = "Number5";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("宋体", 12F);
-            this.label34.Location = new System.Drawing.Point(156, 115);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(64, 16);
-            this.label34.TabIndex = 15;
-            this.label34.Text = "Number4";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("宋体", 12F);
-            this.label33.Location = new System.Drawing.Point(156, 86);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(64, 16);
-            this.label33.TabIndex = 14;
-            this.label33.Text = "Number3";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("宋体", 12F);
-            this.label32.Location = new System.Drawing.Point(156, 55);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(64, 16);
-            this.label32.TabIndex = 13;
-            this.label32.Text = "Number2";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("宋体", 12F);
-            this.label31.Location = new System.Drawing.Point(156, 24);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(64, 16);
-            this.label31.TabIndex = 12;
-            this.label31.Text = "Number1";
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("宋体", 12F);
-            this.label30.Location = new System.Drawing.Point(99, 184);
+            this.label30.Location = new System.Drawing.Point(112, 180);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(16, 16);
             this.label30.TabIndex = 11;
@@ -1395,7 +1477,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("宋体", 12F);
-            this.label29.Location = new System.Drawing.Point(99, 147);
+            this.label29.Location = new System.Drawing.Point(112, 147);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(16, 16);
             this.label29.TabIndex = 10;
@@ -1405,7 +1487,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("宋体", 12F);
-            this.label28.Location = new System.Drawing.Point(99, 115);
+            this.label28.Location = new System.Drawing.Point(112, 115);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(16, 16);
             this.label28.TabIndex = 9;
@@ -1415,7 +1497,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("宋体", 12F);
-            this.label27.Location = new System.Drawing.Point(99, 86);
+            this.label27.Location = new System.Drawing.Point(112, 90);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(16, 16);
             this.label27.TabIndex = 8;
@@ -1425,7 +1507,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("宋体", 12F);
-            this.label26.Location = new System.Drawing.Point(99, 55);
+            this.label26.Location = new System.Drawing.Point(112, 55);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(16, 16);
             this.label26.TabIndex = 7;
@@ -1435,71 +1517,11 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("宋体", 12F);
-            this.label25.Location = new System.Drawing.Point(99, 24);
+            this.label25.Location = new System.Drawing.Point(112, 26);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(16, 16);
             this.label25.TabIndex = 6;
             this.label25.Text = "0";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("宋体", 12F);
-            this.label24.Location = new System.Drawing.Point(18, 184);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(40, 16);
-            this.label24.TabIndex = 5;
-            this.label24.Text = "Roll";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("宋体", 12F);
-            this.label23.Location = new System.Drawing.Point(18, 147);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(32, 16);
-            this.label23.TabIndex = 4;
-            this.label23.Text = "Yaw";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("宋体", 12F);
-            this.label22.Location = new System.Drawing.Point(18, 117);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(48, 16);
-            this.label22.TabIndex = 3;
-            this.label22.Text = "Pitch";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("宋体", 12F);
-            this.label21.Location = new System.Drawing.Point(18, 86);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(72, 16);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "右轮速度";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("宋体", 12F);
-            this.label20.Location = new System.Drawing.Point(18, 55);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(72, 16);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "左轮速度";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("宋体", 12F);
-            this.label19.Location = new System.Drawing.Point(18, 24);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(40, 16);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "中线";
             // 
             // groupBox6
             // 
@@ -1626,191 +1648,29 @@
             // 
             // tabPage12
             // 
-            this.tabPage12.BackgroundImage = global::OV7725调车上位机.Properties.Resources.QQ截图20161107171445;
-            this.tabPage12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage12.Controls.Add(this.label65);
-            this.tabPage12.Controls.Add(this.label64);
-            this.tabPage12.Controls.Add(this.label63);
-            this.tabPage12.Controls.Add(this.label62);
-            this.tabPage12.Controls.Add(this.label61);
-            this.tabPage12.Controls.Add(this.label60);
-            this.tabPage12.Controls.Add(this.label59);
-            this.tabPage12.Controls.Add(this.label58);
-            this.tabPage12.Controls.Add(this.label57);
-            this.tabPage12.Controls.Add(this.label56);
-            this.tabPage12.Controls.Add(this.label55);
-            this.tabPage12.Controls.Add(this.label54);
-            this.tabPage12.Controls.Add(this.label53);
-            this.tabPage12.Controls.Add(this.label52);
-            this.tabPage12.Controls.Add(this.label51);
-            this.tabPage12.Controls.Add(this.label50);
+            this.tabPage12.Controls.Add(this.statusChart1);
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage12.Size = new System.Drawing.Size(641, 270);
             this.tabPage12.TabIndex = 2;
-            this.tabPage12.Text = "盟升杯";
+            this.tabPage12.Text = "示波器";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
-            // label65
+            // statusChart1
             // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label65.Location = new System.Drawing.Point(547, 166);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(44, 48);
-            this.label65.TabIndex = 22;
-            this.label65.Text = "0";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label64.Location = new System.Drawing.Point(580, 88);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(44, 48);
-            this.label64.TabIndex = 21;
-            this.label64.Text = "0";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label63.Location = new System.Drawing.Point(505, 88);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(44, 48);
-            this.label63.TabIndex = 20;
-            this.label63.Text = "0";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label62.Location = new System.Drawing.Point(547, 19);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(44, 48);
-            this.label62.TabIndex = 19;
-            this.label62.Text = "0";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label61.Location = new System.Drawing.Point(393, 88);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(44, 48);
-            this.label61.TabIndex = 18;
-            this.label61.Text = "0";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label60.Location = new System.Drawing.Point(455, 49);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(44, 48);
-            this.label60.TabIndex = 17;
-            this.label60.Text = "0";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label59.Location = new System.Drawing.Point(327, 49);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(44, 48);
-            this.label59.TabIndex = 16;
-            this.label59.Text = "0";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label58.Location = new System.Drawing.Point(393, 6);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(44, 48);
-            this.label58.TabIndex = 15;
-            this.label58.Text = "0";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label57.Location = new System.Drawing.Point(191, 88);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(44, 48);
-            this.label57.TabIndex = 14;
-            this.label57.Text = "0";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label56.Location = new System.Drawing.Point(131, 49);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(44, 48);
-            this.label56.TabIndex = 13;
-            this.label56.Text = "0";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label55.Location = new System.Drawing.Point(261, 49);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(44, 48);
-            this.label55.TabIndex = 12;
-            this.label55.Text = "0";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label54.Location = new System.Drawing.Point(191, 6);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(44, 48);
-            this.label54.TabIndex = 11;
-            this.label54.Text = "0";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label53.Location = new System.Drawing.Point(41, 162);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(44, 48);
-            this.label53.TabIndex = 10;
-            this.label53.Text = "0";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label52.Location = new System.Drawing.Point(77, 103);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(44, 48);
-            this.label52.TabIndex = 9;
-            this.label52.Text = "0";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label51.Location = new System.Drawing.Point(6, 103);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(44, 48);
-            this.label51.TabIndex = 8;
-            this.label51.Text = "0";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label50.Location = new System.Drawing.Point(53, 19);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(44, 48);
-            this.label50.TabIndex = 7;
-            this.label50.Text = "0";
+            this.statusChart1.BackColor = System.Drawing.Color.Black;
+            this.statusChart1.Enabled = false;
+            this.statusChart1.GridColor = System.Drawing.Color.DarkGreen;
+            this.statusChart1.GridHeight = 15;
+            this.statusChart1.GridWidth = 15;
+            this.statusChart1.Interval = 10;
+            this.statusChart1.Location = new System.Drawing.Point(6, 6);
+            this.statusChart1.Mode = UI.StatusChart.ChartMode.Waveform;
+            this.statusChart1.Name = "statusChart1";
+            this.statusChart1.Range = 255;
+            this.statusChart1.Size = new System.Drawing.Size(632, 258);
+            this.statusChart1.TabIndex = 0;
             // 
             // timer1
             // 
@@ -1898,7 +1758,6 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.tabPage12.ResumeLayout(false);
-            this.tabPage12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1950,24 +1809,12 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -2026,22 +1873,19 @@
         private System.Windows.Forms.NumericUpDown numericUpDown15;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.TabPage tabPage12;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label50;
+        private UI.StatusChart statusChart1;
+        private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.RadioButton radioButton13;
+        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }
 

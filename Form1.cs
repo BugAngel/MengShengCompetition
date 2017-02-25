@@ -1020,7 +1020,7 @@ namespace OV7725调车上位机
 
         private void button16_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("王容是傻逼");
+            MessageBox.Show("哈哈哈哈");
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -1152,6 +1152,119 @@ namespace OV7725调车上位机
         private void button23_Click(object sender, EventArgs e)
         {
             SendData(Misfire);
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked)
+            {
+                statusChart1.Value = int.Parse(label25.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Red;
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked)
+            {
+                statusChart1.Value = int.Parse(label26.Text);
+                statusChart1.ForeColor = System.Drawing.Color.OrangeRed;
+            }
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton5.Checked)
+            {
+                statusChart1.Value = int.Parse(label27.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Yellow;
+            }
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton6.Checked)
+            {
+                statusChart1.Value = int.Parse(label28.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Lime;
+            }
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton7.Checked)
+            {
+                statusChart1.Value = int.Parse(label29.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Cyan;
+            }
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton8.Checked)
+            {
+                statusChart1.Value = int.Parse(label30.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Blue;
+            }
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked)
+            {
+                statusChart1.Value = int.Parse(label37.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Purple;
+            }
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton10.Checked)
+            {
+                statusChart1.Value = int.Parse(label38.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Orange;
+            }
+        }
+
+        private void radioButton11_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton11.Checked)
+            {
+                statusChart1.Value = int.Parse(label39.Text);
+                statusChart1.ForeColor = System.Drawing.Color.MintCream;
+            }
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton12.Checked)
+            {
+                statusChart1.Value = int.Parse(label40.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Gray;
+            }
+        }
+
+        private void radioButton13_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton13.Checked)
+            {
+                statusChart1.Value = int.Parse(label41.Text);
+                statusChart1.ForeColor = System.Drawing.Color.SteelBlue;
+            }
+        }
+
+        private void radioButton14_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton14.Checked)
+            {
+                statusChart1.Value = int.Parse(label42.Text);
+                statusChart1.ForeColor = System.Drawing.Color.Navy;
+            }
         }
 
 
