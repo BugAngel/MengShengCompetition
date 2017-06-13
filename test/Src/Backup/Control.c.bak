@@ -1,0 +1,100 @@
+/**
+  ******************************************************************************
+  * @file    control.h
+  * @author  WangRong
+  * @version V1.0
+  * @date    2016/1/13
+  * @brief   control
+
+  ******************************************************************************
+  */
+#include "stm32f4xx_hal.h"
+#include "pid.h"
+#include "Control.h"
+#include "Motor.h"
+
+
+
+extern PidTypeDef RFMotorPID;
+extern PidTypeDef LBMotorPID;
+extern PidTypeDef LFMotorPID;
+extern PidTypeDef RBMotorPID;
+
+extern int16_t MotorSpeed1;//右前  正转负数，倒转正数
+extern int16_t MotorSpeed2;//左后  正转负数，倒转正数
+extern int16_t MotorSpeed3;//左前  正转正数，倒转负数
+extern int16_t MotorSpeed4;//右后  正转负数，倒转正数
+
+extern int32_t UpperSetSpeed;
+extern uint8_t MotorFlag;       //小车启动信号
+
+void PID_init(void)
+{
+    PID_SetParam(&RFMotorPID, 2, 0, -0.4, 0, 0, 0, 0);  //右前电机闭环PID
+    PID_SetParam(&LBMotorPID, 2, 0, -0.4, 0, 0, 0, 0);  //左后电机闭环PID
+    PID_SetParam(&LFMotorPID, 2, 0, -0.4, 0, 0, 0, 0);  //左前电机闭环PID
+    PID_SetParam(&RBMotorPID, 2, 0, -0.4, 0, 0, 0, 0);  //右后电机闭环PID
+
+}
+/**
+  * @brief  PID控制停车
+  * @param  NONE
+  * @retval NONE
+  */
+void PIDStop(void)
+{
+    MotorFlag = 0;
+    PID_SpeedCalc(&RFMotorPID, MotorSpeed1, 0);
+    MotorSpeedRF((int32_t)RFMotorPID.U);  //右前电机转速控制
+
+    PID_SpeedCalc(&LBMotorPID, MotorSpeed2, 0);
+    MotorSpeedLB((int32_t)LBMotorPID.U);  //左后电机转速控制
+
+    PID_SpeedCalc(&LFMotorPID, -MotorSpeed3, 0);
+    MotorSpeedLF((int32_t)LFMotorPID.U);  //左前电机转速控制
+
+    PID_SpeedCalc(&RBMotorPID, MotorSpeed4, 0);
+    MotorSpeedRB((int32_t)RBMotorPID.U);  //右后电机转速控制
+
+}
+/**
+  * @brief  控制前后转时电机转速
+  * @param  UpperSetSpeed:设定编码器速度
+  * @retval NONE
+  */
+void UpperSpeedControl(int32_t UpperSetSpeed)
+{
+    PID_SpeedCalc(&RFMotorPID, -MotorSpeed1, UpperSetSpeed);
+    MotorSpeedRF((int32_t)RFMotorPID.U);  //右前电机转速控制
+
+    PID_SpeedCalc(&LBMotorPID, -MotorSpeed2, UpperSetSpeed);
+    MotorSpeedLB((int32_t)LBMotorPID.U);  //左后电机转速控制
+
+    PID_SpeedCalc(&LFMotorPID, MotorSpeed3, UpperSetSpeed);
+    MotorSpeedLF((int32_t)LFMotorPID.U);  //左前电机转速控制
+
+    PID_SpeedCalc(&RBMotorPID, -MotorSpeed4, UpperSetSpeed);
+    MotorSpeedRB((int32_t)RBMotorPID.U);  //右后电机转速控制
+}
+
+/**
+  * @brief  PID控制
+  * @param  line_pos:当前位置信息
+  * @retval NONE
+  */
+void Pid_Control(uint8_t line_pos)
+{
+    //PID_SpeedCalc(&MotorPID, MotorSpeed1, 0);
+    /*
+    PID_PositionCalc(&SteerPID, line_pos, 63);
+    SteerChange(-SteerPID.U);                           //舵机转向控制
+
+    PID_PositionCalc(&PositionPID, line_pos, 63);
+
+    MotorSpeedL((int32_t)( SPEEDBASE + PositionPID.U));  //电机转速控制
+    MotorSpeedR((int32_t)( SPEEDBASE - PositionPID.U));  //加减号方向控制转向
+    */
+}
+
+
+
